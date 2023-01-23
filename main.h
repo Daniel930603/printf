@@ -50,5 +50,6 @@ int print_rev(va_list l, flags_t *f);
 int print_bigS(va_list l, flags_t *f);
 int print_address(va_list l, flags_t *f);
 int print_percent(va_list l, flags_t *f);
+int printf_unsigned(va_list args)
 
 #endif
