@@ -19,7 +19,6 @@ int print_bigS(va_list l, flags_t *f)
 	(void)f;
 	if (!s)
 		return (_puts("(null)"));
-
 	for (i = 0; s[i]; i++)
 	{
 		if (s[i] > 0 && (s[i] < 32 || s[i] >= 127))
@@ -52,7 +51,6 @@ int print_rev(va_list l, flags_t *f)
 	(void)f;
 	if (!s)
 		s = "(null)";
-
 	while (s[i])
 		i++;
 	for (j = i - 1; j >= 0; j--)
@@ -90,7 +88,6 @@ int print_rot13(va_list l, flags_t *f)
 	}
 	return (j);
 }
-
 /**
  * print_percent - prints a percent
  * @l: va_list arguments from _printf
